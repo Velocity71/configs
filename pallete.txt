@@ -1,0 +1,6 @@
+blue:   0044ff
+red:    ff0005
+green:  7ee300
+yellow: f3c230
+orange: f8900
+black:  0c050c
