@@ -28,7 +28,6 @@ set textwidth=80 " set maximum text width to default for a terminal
 set wrapmargin=0
 set formatoptions+=t
 set linebreak
-set colorcolumn=80 " visual marker of maximum text width
 
 " }}}
 
