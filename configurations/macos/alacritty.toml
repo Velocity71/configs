@@ -1,0 +1,34 @@
+# alacritty.toml
+# Alacritty configuration file
+
+[window] # {{{
+
+# set dimensions to terminal standard (in characters)
+# larger than standard to account for vim ruler and bottom bar
+dimensions.columns = 84
+dimensions.lines = 22
+
+padding.x = 10
+padding.y = 10
+
+decorations = "Buttonless" # for MacOS, no top bar
+
+opacity = 0.7 # opacity of terminal background
+
+# for MacOS, start in fullscreen but can see wallpaper and can put apps on top
+startup_mode = "SimpleFullscreen"
+
+# }}}
+
+[font] # {{{
+
+normal.family = "Hack Nerd Font Mono"
+
+# }}}
+
+[terminal.shell] # {{{
+
+program = "/opt/homebrew/bin/tmux" # use tmux as shell (multiplexer)
+args = ["new-session", "-A", "-s", "main"] # opens "main" sesson or creates it
+
+# }}}

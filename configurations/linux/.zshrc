@@ -1,9 +1,9 @@
-# /home/parkervannah/.zshrc
-# Z Shell configuration file
+# .zshrc
+# zsh (Z Shell) configuration file
 
 autoload -U colors && colors
 
-PS1="%F{98}%n%f@%F{210}%M%f %~ %#> " # command prompt
+PS1="%F{196}%n%F{214}@%F{221}%M%f %F{112}%~%f %F{27}%#%f> " # command prompt
 
 # Aliases {{{
 

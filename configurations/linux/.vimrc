@@ -1,5 +1,5 @@
-" /home/parkervannah/.vimrc
-" Vi Improved Text Editor configuration file
+" .vimrc
+" VIm (Vi Improved) configuration file
 
 " Look and Feel {{{
 
@@ -24,9 +24,9 @@ highlight Folded term=standout ctermfg=223 ctermbg=NONE
 set shiftwidth=4 " set automatic text indentation width
 set tabstop=4 " set tab width
 set expandtab " tabs are made of spaces
-set textwidth=80 " set maximum text width to default for a terminal
+set textwidth=79 " set text width to 1 below standard terminal width (80)
 set wrapmargin=0
-set formatoptions+=t
+set formatoptions+=l " hard wrap by words
 set linebreak
 
 " }}}

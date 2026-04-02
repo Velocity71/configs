@@ -1,5 +1,5 @@
-# /home/parkervannah/.config/alacritty/alacritty.toml
-# Alacritty Terminal Emulator configuration file
+# alacritty.toml
+# Alacritty configuration file
 
 [window] # {{{
 
@@ -11,6 +11,7 @@ dimensions.lines = 22
 padding.x = 10
 padding.y = 10
 
+
 opacity = 0.7 # opacity of terminal background
 
 # }}}
@@ -18,5 +19,12 @@ opacity = 0.7 # opacity of terminal background
 [font] # {{{
 
 normal.family = "Hack Nerd Font Mono"
+
+# }}}
+
+[terminal.shell] # {{{
+
+program = "/opt/homebrew/bin/tmux" # use tmux as shell (multiplexer)
+args = ["new-session", "-A", "-s", "main"] # opens "main" sesson or creates it
 
 # }}}
