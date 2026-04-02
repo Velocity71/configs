@@ -20,9 +20,3 @@ opacity = 0.7 # opacity of terminal background
 normal.family = "Hack Nerd Font Mono"
 
 # }}}
-
-[terminal.shell] # {{{
-
-program = "tmux" # open tmux on startup, a multiplexer and workspace organizer
-
-# }}}
