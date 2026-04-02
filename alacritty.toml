@@ -1,0 +1,28 @@
+# /home/parkervannah/.config/alacritty/alacritty.toml
+# Alacritty Terminal Emulator configuration file
+
+[window] # {{{
+
+# set dimensions to terminal standard (in characters)
+# larger than standard to account for vim ruler and bottom bar
+dimensions.columns = 84
+dimensions.lines = 22
+
+padding.x = 10
+padding.y = 10
+
+opacity = 0.7 # opacity of terminal background
+
+# }}}
+
+[font] # {{{
+
+normal.family = "Hack Nerd Font Mono"
+
+# }}}
+
+[terminal.shell] # {{{
+
+program = "tmux" # open tmux on startup, a multiplexer and workspace organizer
+
+# }}}
