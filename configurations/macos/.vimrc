@@ -1,4 +1,4 @@
-" .vimrc
+".vimrc
 " VIm (Vi Improved) configuration file
 
 " Look and Feel {{{
@@ -21,13 +21,12 @@ highlight Folded term=standout ctermfg=223 ctermbg=NONE
 
 " Formatting {{{
 
+set autoindent=true " continue indent onto newline
 set shiftwidth=4 " set automatic text indentation width
 set tabstop=4 " set tab width
 set expandtab " tabs are made of spaces
 set textwidth=79 " set text width to 1 below standard terminal width (80)
 set wrapmargin=0
-set formatoptions+=l " hard wrap by words
-set linebreak
 
 " }}}
 
@@ -54,7 +53,14 @@ set foldlevel=99
 " Filetype {{{
 
 filetype on " enable file detection
-"filetype plugin on " enable and load filetype plugins
+filetype plugin on " enable and load filetype plugins
 filetype indent on " load filetype indentation file
 
+" ensuring preferred formatoptions are set for all files; had a problem where
+" vimrc would not have formatoption t due to filetype plugins so defined all
+" here for all files
+augroup customformatoptions
+    autocmd!
+    autocmd BufEnter,FileType * setlocal formatoptions=tcan1
+augroup END
 " }}}
