@@ -46,7 +46,7 @@ set nocompatible " disable compatibility with Vi
 
 set foldmethod=marker
 set foldmarker={{{,}}}
-set foldlevel=99
+set foldlevel=0
 
 " }}}
 
