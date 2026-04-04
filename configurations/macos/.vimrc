@@ -61,6 +61,6 @@ filetype indent on " load filetype indentation file
 " here for all files
 augroup customformatoptions
     autocmd!
-    autocmd BufEnter,FileType * setlocal formatoptions=tcan1
+    autocmd BufEnter,FileType * setlocal formatoptions=tc
 augroup END
 " }}}
